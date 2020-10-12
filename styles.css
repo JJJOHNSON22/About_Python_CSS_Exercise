@@ -1,17 +1,236 @@
 * {
     margin: 0px;
     padding: 0px;
+    /* border: 1px dotted red; */
+    font-family: sans-serif;
 }
 
 #container {
-    background-color: rgb(212, 210, 174);
+    background-color: white;
     margin: 0;
-    height: 640px;
+    height: 840px;
     width: 970px;
 }
 
-#header {
+#top_header {
     background-color: rgb(36, 80, 118);
+    padding: 15px 5px 10px 10px;
+    justify-content: space-evenly;
+    vertical-align: top;
+    overflow: visible;
+}
+
+#top_header img {
+    width: 300px;
+    display: inline-flex;
+    margin-right: 360px;
+}
+
+#top_header .top_box {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#top_header .top_box p {
+    color: white;
+    padding-left: 80px;
+    font-size: smaller;
+}
+
+#top_header .top_box a {
+    color: rgb(177, 159, 19);
+}
+
+#top_header .top_box line {
+    color: black;
+}
+
+#top_header .top_box form {
+    vertical-align: middle;
+    background-color: rgb(68, 68, 68);
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+
+#top_header .top_box form input {
+    vertical-align: middle;
     text-align: center;
-    padding: 25px 10px 15px 10px;
+    justify-content: space-evenly;
+    height: 35px;
+    box-shadow: inset 2px 2px 0px 0px grey;
+}
+
+#top_header .top_box form .search {
+    color: rgb(179, 179, 179);
+}
+
+#top_header .top_box form .go_button {
+    background-color: rgb(36, 80, 118);
+    height: 30px;
+    width: 40px;
+    box-shadow: 1px 1px 0px 0px black;
+    border-top: 2px solid rgb(192, 192, 192);
+    border-left: 2px solid rgb(192, 192, 192);
+    border-bottom: 2px solid rgb(108, 108, 108);
+    border-right: 2px solid rgb(108, 108, 108);
+    border-radius: 4px;
+    color: white;
+}
+
+#top_header .nav_bar {
+    background-color: rgb(69, 125, 173);
+    width: 850px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0px;
+    box-shadow: 1px 1px 0px 0px black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#top_header .nav_bar li {
+    display: inline;
+    font-size: x-large;
+    color: white;
+    padding: 0px 15px;
+}
+
+#top_header .side_nav {
+    vertical-align: middle;
+    padding: 20px 40px 50px 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+#top_header .side_nav li {
+    color: white;
+    list-style: none;
+    padding: 5px;
+    font-size: smaller;
+}
+
+#top_header .side_nav .arrow {
+    font-size: xx-small;
+    font-weight: lighter;
+    color: yellow;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#top_header .side_nav .nav_txt {
+    text-decoration: underline;
+}
+
+#top_header .top_para {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: 565px;
+    color: white;
+    padding-top: 20px;
+    font-size: small;
+}
+
+#top_header .main_box {
+    vertical-align: top;
+    padding: 0px 0px 0px 40px;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+}
+
+#top_header .main_box li {
+    padding: 5px;
+}
+
+#top_header .main_box li span {
+    color: rgb(177, 159, 19);
+    font-style: italic;
+}
+
+#top_header .main_box .end_txt {
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    padding: 15px 5px 10px 10px;
+    justify-content: center;
+    vertical-align: top;
+    overflow: visible;
+    text-align: center;
+}
+
+#wrapper h4 {
+    border-top: 4px solid rgb(115, 167, 213);
+    display: inline-flex;
+    width: 350px;
+    justify-content: center;
+    padding: 4px;
+    font-size: larger;
+}
+
+#wrapper ul li {
+    text-align: center;
+    font-size: smaller;
+}
+
+#wrapper ul li a {
+    text-align: center;
+    font-size: smaller;
+    color: rgb(176, 206, 231);
+}
+
+#wrapper ul {
+    vertical-align: top;
+    padding: 0px 0px 0px 40px;
+    text-align: center;
+    display: inline-block;
+    width: 360px;
+}
+
+
+/* #wrapper li:nth-child(2) {
+    list-style: none;
+} */
+
+#wrapper ul li:first-child,
+#wrapper ul li:first-child+li {
+    list-style: none;
+}
+
+#wrapper p {
+    display: flex;
+}
+
+#footer {
+    padding: 45px 5px 5px 10px;
+    justify-content: space-evenly;
+    overflow: visible;
+    height: auto;
+    text-align: center;
+    vertical-align: bottom;
+    background-image: linear-gradient(rgb(36, 80, 118), rgb(56, 103, 130));
+}
+
+#footer p {
+    display: inline-block;
+    font-size: x-small;
+    padding-top: 10px;
+    color: rgb(176, 206, 231);
+}
+
+#footer ul {
+    text-align: center;
+    display: block;
+}
+
+#footer ul li {
+    text-align: center;
+    display: inline;
+    padding: 10px 10px;
+    color: rgb(176, 206, 231);
 }
